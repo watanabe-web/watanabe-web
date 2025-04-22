@@ -15,7 +15,7 @@ self.initPyodide = async function () {
     import micropip
     import os
     from pyodide.http import pyfetch
-    response = await pyfetch("app.tar.gz")
+    response = await pyfetch("https://drive.google.com/uc?export=download&id=17VgLB7X2vSfzDFtp3lpp17duVWBATCSu");
     await response.unpack_archive()
     if os.path.exists("requirements.txt"):
         with open("requirements.txt", "r") as f:
